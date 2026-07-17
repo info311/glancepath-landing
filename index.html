@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GlancePath — Reflect. Refine. Realize.</title>
-<meta name="description" content="GlancePath connects your long-term vision to your daily actions — through habits, journaling, and reflection that actually stick.">
+<meta name="description" content="GlancePath connects your long-term vision to your daily actions — through habits, journaling, and reflection that actually stick. Available now on Google Play.">
 <meta property="og:title" content="GlancePath — Reflect. Refine. Realize.">
-<meta property="og:description" content="GlancePath connects your long-term vision to your daily actions — through habits, journaling, and reflection that actually stick.">
+<meta property="og:description" content="GlancePath connects your long-term vision to your daily actions — through habits, journaling, and reflection that actually stick. Available now on Google Play.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://glancepath.lisola.site">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -140,7 +140,7 @@
     animation: fadeUp 0.6s 0.3s ease both;
   }
 
-  .btn-coming-soon {
+  .btn-play-store {
     display: inline-flex;
     align-items: center;
     gap: 0.625rem;
@@ -153,14 +153,12 @@
     text-decoration: none;
     transition: all 0.25s;
     animation: fadeUp 0.6s 0.4s ease both;
-    cursor: default;
+    cursor: pointer;
   }
 
-  .btn-coming-soon .dot {
-    width: 8px; height: 8px;
-    border-radius: 50%;
+  .btn-play-store:hover {
     background: var(--teal);
-    animation: pulse 2s infinite;
+    color: var(--white);
   }
 
   /* SCROLL INDICATOR */
@@ -439,11 +437,6 @@
     to   { opacity: 1; transform: translateY(0); }
   }
 
-  @keyframes pulse {
-    0%, 100% { opacity: 1; transform: scale(1); }
-    50%       { opacity: 0.5; transform: scale(0.8); }
-  }
-
   @keyframes scrollDown {
     0%   { transform: scaleY(0); transform-origin: top; }
     50%  { transform: scaleY(1); transform-origin: top; }
@@ -470,14 +463,13 @@
 
 <!-- HERO -->
 <section class="hero">
-  <span class="hero-eyebrow">Coming to Android</span>
+  <span class="hero-eyebrow">Available on Google Play</span>
   <h1 class="hero-title">Reflect. Refine. <span>Realize.</span></h1>
   <p class="hero-subtitle">Where introspection meets evolution.</p>
   <p class="hero-desc">GlancePath connects your long-term vision to your daily actions — through habits, journaling, and reflection that actually stick.</p>
-  <span class="btn-coming-soon">
-    <span class="dot"></span>
-    Coming Soon on Google Play
-  </span>
+  <a href="https://play.google.com/store/apps/details?id=site.lisola.glancepath" target="_blank" rel="noopener noreferrer" class="btn-play-store">
+    Get it on Google Play
+  </a>
   <div class="scroll-hint">
     <div class="scroll-line"></div>
   </div>
@@ -565,18 +557,16 @@
 <!-- CTA -->
 <section class="cta">
   <h2 class="cta-title">Your intentional life<br>starts here.</h2>
-  <p class="cta-desc">GlancePath is coming to Android soon. Stay tuned.</p>
-  <span class="btn-coming-soon">
-    <span class="dot"></span>
-    Coming Soon on Google Play
-  </span>
+  <p class="cta-desc">GlancePath is available on Android. Start your intentional life today.</p>
+  <a href="https://play.google.com/store/apps/details?id=site.lisola.glancepath" target="_blank" rel="noopener noreferrer" class="btn-play-store">
+    Get it on Google Play
+  </a>
 </section>
 
 <!-- FOOTER -->
 <footer>
   <p class="footer-brand"><span>GlancePath</span> by Lisola</p>
   <div class="footer-links">
-    <a href="https://lisola.site">Lisola</a>
     <a href="/privacy.html">Privacy Policy</a>
   </div>
 </footer>
