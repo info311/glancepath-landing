@@ -140,25 +140,21 @@
     animation: fadeUp 0.6s 0.3s ease both;
   }
 
-  .btn-play-store {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.625rem;
-    padding: 0.875rem 2rem;
-    border-radius: 999px;
-    border: 1.5px solid var(--teal);
-    color: var(--teal);
-    font-size: 0.9375rem;
-    font-weight: 500;
-    text-decoration: none;
-    transition: all 0.25s;
+  .btn-play-store-badge {
+    display: inline-block;
     animation: fadeUp 0.6s 0.4s ease both;
-    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
   }
 
-  .btn-play-store:hover {
-    background: var(--teal);
-    color: var(--white);
+  .btn-play-store-badge:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+  }
+
+  .play-badge-img {
+    height: 54px;
+    width: auto;
+    display: block;
   }
 
   /* SCROLL INDICATOR */
@@ -450,6 +446,7 @@
     .flow-steps::before { display: none; }
     .flow-steps { gap: 2rem; }
     footer { flex-direction: column; align-items: flex-start; }
+    .play-badge-img { height: 48px; }
   }
 </style>
 </head>
@@ -467,8 +464,8 @@
   <h1 class="hero-title">Reflect. Refine. <span>Realize.</span></h1>
   <p class="hero-subtitle">Where introspection meets evolution.</p>
   <p class="hero-desc">GlancePath connects your long-term vision to your daily actions — through habits, journaling, and reflection that actually stick.</p>
-  <a href="https://play.google.com/store/apps/details?id=site.lisola.glancepath" target="_blank" rel="noopener noreferrer" class="btn-play-store">
-    Get it on Google Play
+  <a href="https://play.google.com/store/apps/details?id=site.lisola.glancepath" target="_blank" rel="noopener noreferrer" class="btn-play-store-badge">
+    <img src="assets/images/GetItOnGooglePlay_Badge_Web_color_English.svg" alt="Get it on Google Play" class="play-badge-img">
   </a>
   <div class="scroll-hint">
     <div class="scroll-line"></div>
@@ -558,8 +555,8 @@
 <section class="cta">
   <h2 class="cta-title">Your intentional life<br>starts here.</h2>
   <p class="cta-desc">GlancePath is available on Android. Start your intentional life today.</p>
-  <a href="https://play.google.com/store/apps/details?id=site.lisola.glancepath" target="_blank" rel="noopener noreferrer" class="btn-play-store">
-    Get it on Google Play
+  <a href="https://play.google.com/store/apps/details?id=site.lisola.glancepath" target="_blank" rel="noopener noreferrer" class="btn-play-store-badge">
+    <img src="assets/images/GetItOnGooglePlay_Badge_Web_color_English.svg" alt="Get it on Google Play" class="play-badge-img">
   </a>
 </section>
 
